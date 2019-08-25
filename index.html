@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>Artur C. Sponchiado</title>
+    <!-- Favicons -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        nav {
+            font-family: 'Cinzel Decorative', serif;
+            /*font-size: 16px;*/
+            font-weight: 400;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .top-banner {
+            /*background-image: linear-gradient(#664433, #B16A4C);*/
+            background-image: linear-gradient(#C37A57, #472C21);
+            background: url('img/matrixWallpaperBlurred.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .top-banner-content {
+            height: 75vh;
+        }
+
+        .top-banner-title {
+            color: white;
+            font-family: 'Cinzel Decorative', serif;
+        }
+
+        .top-banner-divider {
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
+        .plan {
+            padding: 16px 0px 16px 0px;
+        }
+
+        .plan a {
+            margin: 16px 16px 16px 16px;
+            font-weight: 600;
+        }
+
+        .basic-plan {
+            background-image: linear-gradient(#FA9565, #E57A8D);
+        }
+
+        .normal-plan {
+            background-image: linear-gradient(#740091, #e100ff);
+        }
+
+        .vip-plan {
+            background-image: linear-gradient(#890000, #510000);
+        }
+
+        .custom-plan {
+            background-image: linear-gradient(#00a9c4, #5b007a);
+            margin: 0px 0px 0px 0px;
+            padding: 16px 0px 16px 0px !important;
+        }
+
+        .plan-title {
+            font-weight: 600;
+            line-height: 1.3;
+            font-size: 45px;
+        }
+
+        .plan-details ul li {
+            padding: 4px 8px 0px 8px;
+            font-size: 18px;
+        }
+
+        .custom-plan-details {
+            font-size: 18px;
+        }
+
+        .input-field {
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            color: #000000 !important;
+        }
+
+        .carousel .carousel-item {
+            min-height: 400px;
+        }
+
+        .slider .slides li img {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: white;
+        }
+
+        .flow-text {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <!-- CORE CSS-->
+    <link href="/src/css/materialize.min.css" type="text/css" rel="stylesheet">
+    <link href="/src/css/custom.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="top-banner">
+        <div class="container">
+            <div class="valign-wrapper top-banner-content">
+                <div class="row">
+                    <div class="col s12 center">
+                        <img class="circle responsive-img" src="img/profilePicture.jpg" width="128">
+                    </div>
+                    <div class="col s12">
+                        <h3 class="center-align top-banner-title">Artur C. Sponchiado</h3>
+                    </div>
+                    <div class="col s8 offset-s2 divider top-banner-divider"></div>
+                    <div class="col s10 center offset-s1">
+                        <a class="waves-effect waves-light btn-large orange darken-3" style="margin-top:8px;"
+                            onclick="scrollToElement('presentationDiv')">Apresentação</a>
+                        <a class="waves-effect waves-light btn-large orange darken-3" style="margin-top:8px;"
+                            onclick="scrollToElement('experienceDiv')">Experiência</a>
+                        <a class="waves-effect waves-light btn-large orange darken-3" style="margin-top:8px;"
+                            onclick="scrollToElement('projectsDiv')">Projetos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="presentationDiv" class="container">
+        <div class="section">
+            <h3>Apresentação</h3>
+            <div class="col s12">
+                <p class="flow-text">
+                    Artur Constanzi Sponchiado, <span id="myAge"></span>, natural de Quilombo/SC, graduando do curso
+                    de Ciência da Computação pela Universidade Federal da Fronteira Sul, em Chapecó/SC e 
+                    estagiário do Setor de Desenvolvimento na UFFS, trabalhando atualmente com tecnologias como Python,
+                    Plone e ZODB.
+                </p>
+                <div class="col s12">
+                    <span class="flow-text">
+                        <i class="fas fa-at"></i>
+                        <a href="mailto:artursponchi@gmail.com">artursponchi@gmail.com</a>
+                    </span>
+                    <br>
+                    <span class="flow-text">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/arturspon">github.com/arturspon</a>
+                    </span>
+                    <br>
+                    <span class="flow-text"><i class="fab fa-whatsapp"></i> (49) 9 8801-6420</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="experienceDiv" class="section">
+            <h3>Experiência</h3>
+            <div class="col s12">
+                <p class="flow-text">
+                    No 2º semestre de 2018, foi idealizador e instrutor do minicurso "Criação de um APP Android a partir
+                    do Zero", com duração total de 20 horas, ministrado na UFFS - Campus Chapecó/SC.
+                </p>
+            </div>
+            <div class="col s12">
+                <p class="flow-text">
+                    No 2º semestre de 2019 até atualmente, atua em desenvolvimento WEB como estagiário na UFFS - Campus
+                    Chapecó/SC, utilizando tecnologias como Bootstrap, Python, Javascript, jQuery e Plone.
+                </p>
+            </div>
+        </div>
+
+        <div id="projectsDiv" class="section">
+            <h3>Projetos</h3>
+            <div class="col s12">
+                <p class="flow-text">
+                    <h4>Mimicando</h4>
+                    <p class="flow-text">Jogo para celulares Android com aproximadamente <b>50.000 downloads</b> na <a
+                            href="https://play.google.com/store/apps/details?id=net.ddns.artspon.mimicando&hl=pt_BR">Play
+                            Store</a>.</p>
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/mimicando/mimicando0.png"></a>
+                        <a class="carousel-item" href="#two!"><img src="img/portfolio/mimicando/mimicando1.png"></a>
+                        <a class="carousel-item" href="#three!"><img src="img/portfolio/mimicando/mimicando2.png"></a>
+                    </div>
+                </p>
+            </div>
+            <div class="col s12">
+                <p class="flow-text">
+                    <h4>MeQuiz</h4>
+                    <p class="flow-text">
+                        Jogo para celulares Android feito com o banco de dados da Google (Firebase Cloud Firestore),
+                        disponível na <a
+                            href="https://play.google.com/store/apps/details?id=net.ddns.artspon.mequiz">Play Store</a>
+                        e também como projeto <i>open-source</i> no <a
+                            href="https://github.com/arturspon/MeQuiz">Github.</a>
+                    </p>
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/mequiz/mequiz0.png"></a>
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/mequiz/mequiz1.png"></a>
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/mequiz/mequiz2.png"></a>
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/mequiz/mequiz3.png"></a>
+                    </div>
+                </p>
+            </div>
+            <div class="col s12">
+                <p class="flow-text">
+                    <h4>Faz ou bebe</h4>
+                    <p class="flow-text">
+                        Jogo para celulares Android com mais de 1000 downloads na <a
+                            href="https://play.google.com/store/apps/details?id=net.ddns.artspon.fazoubebe">Play
+                            Store</a>.
+                    </p>
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/fob/fob0.png"></a>
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/fob/fob1.png"></a>
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/fob/fob2.png"></a>
+                        <a class="carousel-item" href="#one!"><img src="img/portfolio/fob/fob3.png"></a>
+                    </div>
+                </p>
+            </div>
+            <div class="col s12">
+                <p class="flow-text">
+                    <h4>ApropDespesas</h4>
+                    <p class="flow-text">
+                        Aplicativo desktop desenvolvido em Java, com uma interface fácil e intuitiva ao usuário, tendo
+                        como objetivo facilitar a parte de apropriações de despesas na contabilidade.
+                    </p>
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/portfolio/apropdesp/aprop0.png">
+                            </li>
+                            <li>
+                                <img src="img/portfolio/apropdesp/aprop1.png">
+                            </li>
+                            <li>
+                                <img src="img/portfolio/apropdesp/aprop2.png">
+                            </li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+            <div class="col s12">
+                <p class="flow-text">
+                    <h4>Dona Albina - <i>em desenvolvimento</i></h4>
+                    <p class="flow-text">Site de vendas integrado com MercadoPago, Firebase Cloud Firestore, Firebase
+                        Functions e Firebase Hosting.</p>
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/portfolio/dona-albina/dalbina0.png">
+                            </li>
+                            <li>
+                                <img src="img/portfolio/dona-albina/dalbina1.png">
+                            </li>
+                            <li>
+                                <img src="img/portfolio/dona-albina/dalbina2.png">
+                            </li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+            <div class="col s12">
+                <p class="flow-text">
+                    <h4>Zombie Killer</i></h4>
+                    <p class="flow-text">
+                        Jogo desenvolvido como tarefa para a disciplina de "Jogos Digitais" do curso de Ciência da Computação,
+                        disponível para jogar pela <a href="https://arturspon.github.io/zombie-killer/">WEB</a> e como projeto 
+                        <i>open-source</i> no <a href="https://github.com/arturspon/zombie-killer">Github</a>.
+                    </p>
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/portfolio/zombie-killer/zk0.png">
+                            </li>
+                            <li>
+                                    <img src="img/portfolio/zombie-killer/zk1.png">
+                            </li>
+                            <li>
+                                    <img src="img/portfolio/zombie-killer/zk2.png">
+                            </li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Considerações</h3>
+            <blockquote>
+                <span class="flow-text">
+                    Conhecimentos gerais em Java, Javascript, Node.js, Python, C, SQL, Serviços Firebase, entre outros.
+                </span>
+            </blockquote>
+            <blockquote>
+                <span class="flow-text">
+                    Os projetos aqui apresentados foram considerados os mais importantes, todavia, não são os únicos em que já trabalhou/desenvolveu.
+                </span>
+            </blockquote>
+        </div>
+    </div>
+
+    <!-- Bottom padding after content -->
+    <div style="height: 300px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/850d9548d9.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            calculateAge()
+            initializeMaterializeElements()
+        })
+
+        function calculateAge() {
+            const birthday = new Date(1997, 9, 15) // 9 == October
+            const ageDifMs = Date.now() - birthday.getTime()
+            const ageDate = new Date(ageDifMs)
+            document.getElementById('myAge').innerHTML = Math.abs(ageDate.getUTCFullYear() - 1970) + ' anos'
+        }
+
+        function initializeMaterializeElements() {
+            initializeCarousel()
+            initializeSlider()
+
+            function initializeCarousel() {
+                const elems = document.querySelectorAll('.carousel')
+                const instances = M.Carousel.init(elems, {})
+            }
+
+            function initializeSlider() {
+                const elems = document.querySelectorAll('.slider')
+                const instances = M.Slider.init(elems, {})
+            }
+        }
+
+        function scrollToElement(elementId) {
+            document.getElementById(elementId)
+                .scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+        }
+    </script>
+</body>
+
+</html>

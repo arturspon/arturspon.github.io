@@ -7,120 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">
     <title>Artur C. Sponchiado</title>
+
     <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <style>
-        nav {
-            font-family: 'Cinzel Decorative', serif;
-            /*font-size: 16px;*/
-            font-weight: 400;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .top-banner {
-            /*background-image: linear-gradient(#664433, #B16A4C);*/
-            background-image: linear-gradient(#C37A57, #472C21);
-            background: url('img/matrixWallpaperBlurred.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-
-        .top-banner-content {
-            height: 75vh;
-        }
-
-        .top-banner-title {
-            color: white;
-            font-family: 'Cinzel Decorative', serif;
-        }
-
-        .top-banner-divider {
-            margin-top: 8px;
-            margin-bottom: 16px;
-        }
-
-        .plan {
-            padding: 16px 0px 16px 0px;
-        }
-
-        .plan a {
-            margin: 16px 16px 16px 16px;
-            font-weight: 600;
-        }
-
-        .basic-plan {
-            background-image: linear-gradient(#FA9565, #E57A8D);
-        }
-
-        .normal-plan {
-            background-image: linear-gradient(#740091, #e100ff);
-        }
-
-        .vip-plan {
-            background-image: linear-gradient(#890000, #510000);
-        }
-
-        .custom-plan {
-            background-image: linear-gradient(#00a9c4, #5b007a);
-            margin: 0px 0px 0px 0px;
-            padding: 16px 0px 16px 0px !important;
-        }
-
-        .plan-title {
-            font-weight: 600;
-            line-height: 1.3;
-            font-size: 45px;
-        }
-
-        .plan-details ul li {
-            padding: 4px 8px 0px 8px;
-            font-size: 18px;
-        }
-
-        .custom-plan-details {
-            font-size: 18px;
-        }
-
-        .input-field {
-            margin-top: 0px !important;
-            margin-bottom: 0px !important;
-            color: #000000 !important;
-        }
-
-        .carousel .carousel-item {
-            min-height: 400px;
-        }
-
-        .slider .slides li img {
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-color: white;
-        }
-
-        .flow-text {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-    </style>
-    <!-- For iPhone -->
-    <meta name="msapplication-TileColor" content="#00bcd4">
-    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    
     <!-- CORE CSS-->
-    <link href="/src/css/materialize.min.css" type="text/css" rel="stylesheet">
-    <link href="/src/css/custom.css" type="text/css" rel="stylesheet">
+    <link href="css/landing.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -327,43 +228,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/850d9548d9.js"></script>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-            calculateAge()
-            initializeMaterializeElements()
-        })
-
-        function calculateAge() {
-            const birthday = new Date(1997, 9, 15) // 9 == October
-            const ageDifMs = Date.now() - birthday.getTime()
-            const ageDate = new Date(ageDifMs)
-            document.getElementById('myAge').innerHTML = Math.abs(ageDate.getUTCFullYear() - 1970) + ' anos'
-        }
-
-        function initializeMaterializeElements() {
-            initializeCarousel()
-            initializeSlider()
-
-            function initializeCarousel() {
-                const elems = document.querySelectorAll('.carousel')
-                const instances = M.Carousel.init(elems, {})
-            }
-
-            function initializeSlider() {
-                const elems = document.querySelectorAll('.slider')
-                const instances = M.Slider.init(elems, {})
-            }
-        }
-
-        function scrollToElement(elementId) {
-            document.getElementById(elementId)
-                .scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                })
-        }
-    </script>
+    <script src="js/landing.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@ function initializeMaterializeElements() {
 
     function initializeSlider() {
         const elems = document.querySelectorAll('.slider')
-        const instances = M.Slider.init(elems, {})
+        const instances = M.Slider.init(elems, { interval: 2000 })
     }
 }
 

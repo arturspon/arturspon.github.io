@@ -7,8 +7,14 @@ name: Build app
     branches:
       - master
 jobs:
-  build_and_deploy:
+  build_vue:
     runs-on: ubuntu-latest
+    name: Build Vue
     steps:
       - uses: actions/checkout@v2
-      - run: npm install --global yarn && yarn install && yarn quasar build
+      - id: Build-Vue
+        uses: xRealNeon/VuePagesAction@1.0.1
+        with:
+          username: 'arturspon'
+          reponame: 'arturspon.github.io'
+          token: ${{ secrets.DEPLOY_TOKEN }}

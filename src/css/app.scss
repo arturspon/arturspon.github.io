@@ -1,0 +1,48 @@
+:root {
+  --bg-color: #20272f;
+  --bg-color-darker: #171c22;
+  --text-color: #ffffff;
+  --text-muted-color: rgb(180, 180, 180);
+  --card-color: #404040;
+}
+
+body {
+  background-color: $dark;
+  color: var(--text-color);
+}
+
+.q-card {
+  background-color: var(--card-color);
+  border-radius: 0.75rem;
+}
+
+.q-carousel__slide {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-muted {
+  color: var(--text-muted-color);
+}
+
+.gap-0 {
+  gap: 0 !important;
+}
+.gap-05 {
+  gap: 0.15rem !important;
+}
+.gap-1 {
+  gap: 0.25rem !important;
+}
+.gap-2 {
+  gap: 0.5rem !important;
+}
+.gap-3 {
+  gap: 1rem !important;
+}
+.gap-4 {
+  gap: 1.5rem !important;
+}
+.gap-5 {
+  gap: 3rem !important;
+}
